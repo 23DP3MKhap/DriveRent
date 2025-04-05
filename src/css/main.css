@@ -9,13 +9,13 @@ body{
 }
 
 header {
-  position: fixed; /* Фиксированное позиционирование */
-  top: 0; /* Прижимаем к верхнему краю */
+  position: fixed; 
+  top: 0; 
   left: 0;
-  width: 100%; /* На всю ширину экрана */
+  width: 100%; 
   background-color: #1E1E1E;
   padding: 20px 0;
-  z-index: 1000; /* Высокий z-index чтобы был поверх других элементов */
+  z-index: 1000; 
   
 }
 
@@ -113,4 +113,50 @@ nav a:hover {
 
 .hero-button button:hover {
   background-color: rgba(30, 30, 30, 0.9); 
+}
+
+#Why-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#Why-us h1 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.Why-us-blocks {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px; 
+}
+
+.Organization, .Statistika, .Interface {
+  flex: 1; 
+  min-width: 250px; 
+  padding: 30px;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+}
+
+.Organization h2, 
+.Statistika h2, 
+.Interface h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.Organization p, 
+.Statistika p, 
+.Interface p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
 }
