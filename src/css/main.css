@@ -14,9 +14,16 @@ header {
   left: 0;
   width: 100%; 
   background-color: #1E1E1E;
-  padding: 20px 0;
+  padding: 12px 0;
   z-index: 1000; 
   
+}
+
+hr {
+  border: none;
+  height: 5px;
+  background-color: #333333; 
+  margin: 0;
 }
 
 nav ul {
@@ -116,6 +123,9 @@ nav a:hover {
 }
 
 #Why-us {
+  width: 100%;
+  min-height: 100vh; 
+  height: auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,17 +134,20 @@ nav a:hover {
 }
 
 #Why-us h1 {
+  font-weight: 100;
+  font-family: 'Orbitron', Arial, sans-serif;
   font-size: 45px;
   margin-bottom: 40px;
   color: #ffffff;
+  
 }
 
 .Why-us-blocks {
   display: flex;
   justify-content: space-around; 
-  width: 100%;
-  max-width: 1200px;
-  gap: 40px; 
+  width: 87%;
+  height: 600px;
+  gap: 90px; 
 }
 
 .Organization, .Statistika, .Interface {
@@ -148,7 +161,10 @@ nav a:hover {
 .Organization h2, 
 .Statistika h2, 
 .Interface h2 {
-  font-size: 20px;
+  font-weight: 100;
+  margin-top: 70px;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 30px;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -156,7 +172,18 @@ nav a:hover {
 .Organization p, 
 .Statistika p, 
 .Interface p {
-  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
   line-height: 1.6;
   color: #ffffff;
 }
+
+.Organization img,
+.Statistika img,
+.Interface img {
+  width: 50%;
+  height: auto;
+  margin-top: 20px; 
+}
+
+
