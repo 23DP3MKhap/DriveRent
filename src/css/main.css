@@ -281,3 +281,44 @@ nav a:hover {
   line-height: 1.6;
   color: #cccccc;
 }
+
+@media (max-width: 1024px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Why-us-blocks {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  #About {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  #About img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .About-blocks {
+    width: 100%;
+    align-items: center;
+  }
+
+  .About-blocks div {
+    width: 100%;
+  }
+}
