@@ -188,8 +188,7 @@ nav a:hover {
 
 
 #Download{
-  width: 100%;
-  min-height: 40vh; 
+  min-height: 60vh; 
   height: auto; 
   display: flex;
   flex-direction: column;
@@ -216,6 +215,10 @@ nav a:hover {
   justify-content: center;
 }
 
+#Download button:hover {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
 #Download h1 {
   font-weight: 100;
   font-family: 'Orbitron', Arial, sans-serif;
@@ -235,19 +238,32 @@ nav a:hover {
 }
 
 #About {
+  min-height: 100vh;
+}
+
+#About h1 {
+  padding: 5%;
+  font-weight: 100;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 45px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.About-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 5%;
+  padding: 70px 5%;
   background-color: #121212;
   color: white;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
 
 
-#About img {
+.About-main img {
   width: 45%;
   max-width: 600px;
   height: auto;
@@ -282,12 +298,184 @@ nav a:hover {
   color: #cccccc;
 }
 
+#Instruction {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#Instruction h1 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+#Instruction img {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#Instruction button {
+  color: #ffffff;
+  height: 70px;
+  width: 200px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid rgba(30, 30, 30, 0.6);
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Instruction button:hover {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+
+#Instruction {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #121212;
+  color: white;
+}
+
+#Instruction h1 {
+  font-weight: 100;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+#Instruction img {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#Instruction button {
+  color: #ffffff;
+  height: 70px;
+  width: 250px;
+  padding: 0 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid rgba(30, 30, 30, 0.6);
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#Instruction button:hover {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+#Ratings {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #121212;
+  color: white;
+}
+
+#Ratings h1 {
+  font-weight: 100;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.Rating-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.Rating-1, .Rating-2, .Rating-3 {
+  padding: 23px;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.Rating-1, .Rating-3 {
+  flex: 0 1 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Rating-2 {
+  flex: 0 1 500px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Rating-blocks h2 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.Rating-blocks p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 @media (max-width: 1024px) {
+
+  nav ul img {
+    display: none;
+  }
+
   nav ul {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 0 20px;
+    
   }
 
   .hero-button {
@@ -302,13 +490,13 @@ nav a:hover {
     gap: 30px;
   }
 
-  #About {
+  .About-main {
     flex-direction: column;
     text-align: center;
     padding: 60px 5%;
   }
 
-  #About img {
+  .About-main img {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -321,4 +509,26 @@ nav a:hover {
   .About-blocks div {
     width: 100%;
   }
+
+  .Rating-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Rating-1, .Rating-2, .Rating-3 {
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .Rating-1, .Rating-3 {
+    text-align: center;
+  }
+  
+  .Rating-2 {
+    text-align: left;
+  }
 }
+
+  
+
+
