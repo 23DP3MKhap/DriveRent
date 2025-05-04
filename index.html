@@ -12,8 +12,8 @@
         <nav>
             <ul>
                 <img src ="/src/images/CarLogo.png" alt="Drive Rent Logo" class="logo">
-                <li><a href="#Why-us">Why us</a></li>
                 <li><a href="#About">About</a></li>
+                <li><a href="#Why-us">Why us</a></li>
                 <li><a href="#Instruction">Instruction</a></li>
                 <li><a href="#Ratings">Ratings</a></li>
                 <li><a href="#Contact-us">Contact us</a></li>
@@ -108,7 +108,7 @@
 
 
     <section id="Instruction">
-      <img src="" alt="PDF icon">
+      <img src="/src/images/pdf-icon.png" alt="PDF icon">
         <h1>Instruction</h1>
         <button>Download PDF</button>
     </section>
@@ -133,8 +133,35 @@
         </div>
         
     </section>
+
     <hr>
 
+    <section id="Contact-us">
+      <h1>Contact Us</h1>
+      <div class="contact-form-border">
+          <form class="contact-form">
+              <div class="form-row">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name">
+                  </div>
+                  <div class="form-group">
+                      <label for="surname">Surname</label>
+                      <input type="text" id="surname" name="surname">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="send-button">Send</button>
+          </form>
+      </div>
+  </section>
 
     <script src="main.js"></script>
 </body>
