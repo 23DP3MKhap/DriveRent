@@ -148,7 +148,7 @@ nav a:hover {
 .Why-us-blocks {
   display: flex;
   justify-content: space-around; 
-  width: 87%;
+  width: 75%;
   height: 600px;
   gap: 90px; 
 }
@@ -184,7 +184,7 @@ nav a:hover {
 .Organization img,
 .Statistika img,
 .Interface img {
-  width: 50%;
+  width: 39%;
   height: auto;
   margin-top: 20px; 
 }
@@ -398,7 +398,7 @@ nav a:hover {
 
 #Ratings {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   height: auto;
   display: flex;
   flex-direction: column;
