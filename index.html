@@ -30,8 +30,8 @@
         </div>
 
         <div class="hero-button">
-          <button>About</button>
-          <button>Download</button>
+          <a href="#About"><button>About</button></a>
+          <a href="#Download"><button>Download</button></a>
         </div>
 
     </section>
@@ -100,20 +100,21 @@
     <hr>
 
     <section id="Download">
-
-        <h1>Download</h1>
-        <h2>Download and enjoy now absolutely free</h2>
-        <button>Download</button>
-        
-
-    </section>
+      <h1>Download</h1>
+      <h2>Download and enjoy now absolutely free</h2>
+      <a href="/src/downloads/CarRentalSystem.zip" download>
+          <button>Download</button>
+      </a>
+  </section>
     <hr>
 
 
     <section id="Instruction">
       <img src="/src/images/pdf-icon.png" alt="PDF icon">
-        <h1>Instruction</h1>
-        <button>Download PDF</button>
+      <h1>Instruction</h1>
+      <a href="/src/downloads/DriveRentInstructions.pdf" download>
+          <button>Download PDF</button>
+      </a>
     </section>
 
     <hr>
@@ -169,6 +170,12 @@
       </div>
   </section>
 
-    <script src="src/js/main.js"></script>
+  <script src="src/js/main.js"></script>
+
+  <section id ="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 DriveRent. All rights reserved.</p> 
+    </div>	
+  </section>
 </body>
 </html>
