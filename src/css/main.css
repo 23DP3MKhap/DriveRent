@@ -76,7 +76,7 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding: 60px 20px;
-  background-image: url('/src/images/hero-background.png');
+  background-image: url('src/images/hero-background.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
